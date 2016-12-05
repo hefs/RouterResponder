@@ -13,6 +13,9 @@
 		4203DD231DF54BC80057CABC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4203DD211DF54BC80057CABC /* Main.storyboard */; };
 		4203DD251DF54BC80057CABC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4203DD241DF54BC80057CABC /* Assets.xcassets */; };
 		4203DD281DF54BC80057CABC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4203DD261DF54BC80057CABC /* LaunchScreen.storyboard */; };
+		4203DD311DF54C9D0057CABC /* UIResponder+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 4203DD301DF54C9D0057CABC /* UIResponder+Router.m */; };
+		4203DD351DF54EC10057CABC /* RouterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4203DD331DF54EC10057CABC /* RouterCell.m */; };
+		4203DD361DF54EC10057CABC /* RouterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4203DD341DF54EC10057CABC /* RouterCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,11 @@
 		4203DD241DF54BC80057CABC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4203DD271DF54BC80057CABC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4203DD291DF54BC80057CABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4203DD2F1DF54C9D0057CABC /* UIResponder+Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Router.h"; sourceTree = "<group>"; };
+		4203DD301DF54C9D0057CABC /* UIResponder+Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Router.m"; sourceTree = "<group>"; };
+		4203DD321DF54EC10057CABC /* RouterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouterCell.h; sourceTree = "<group>"; };
+		4203DD331DF54EC10057CABC /* RouterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouterCell.m; sourceTree = "<group>"; };
+		4203DD341DF54EC10057CABC /* RouterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RouterCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,11 @@
 				4203DD1C1DF54BC80057CABC /* AppDelegate.m */,
 				4203DD1E1DF54BC80057CABC /* ViewController.h */,
 				4203DD1F1DF54BC80057CABC /* ViewController.m */,
+				4203DD321DF54EC10057CABC /* RouterCell.h */,
+				4203DD331DF54EC10057CABC /* RouterCell.m */,
+				4203DD341DF54EC10057CABC /* RouterCell.xib */,
+				4203DD2F1DF54C9D0057CABC /* UIResponder+Router.h */,
+				4203DD301DF54C9D0057CABC /* UIResponder+Router.m */,
 				4203DD211DF54BC80057CABC /* Main.storyboard */,
 				4203DD241DF54BC80057CABC /* Assets.xcassets */,
 				4203DD261DF54BC80057CABC /* LaunchScreen.storyboard */,
@@ -137,6 +150,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4203DD361DF54EC10057CABC /* RouterCell.xib in Resources */,
 				4203DD281DF54BC80057CABC /* LaunchScreen.storyboard in Resources */,
 				4203DD251DF54BC80057CABC /* Assets.xcassets in Resources */,
 				4203DD231DF54BC80057CABC /* Main.storyboard in Resources */,
@@ -152,7 +166,9 @@
 			files = (
 				4203DD201DF54BC80057CABC /* ViewController.m in Sources */,
 				4203DD1D1DF54BC80057CABC /* AppDelegate.m in Sources */,
+				4203DD351DF54EC10057CABC /* RouterCell.m in Sources */,
 				4203DD1A1DF54BC80057CABC /* main.m in Sources */,
+				4203DD311DF54C9D0057CABC /* UIResponder+Router.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
