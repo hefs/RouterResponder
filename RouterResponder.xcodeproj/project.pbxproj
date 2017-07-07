@@ -16,6 +16,8 @@
 		4203DD311DF54C9D0057CABC /* UIResponder+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 4203DD301DF54C9D0057CABC /* UIResponder+Router.m */; };
 		4203DD351DF54EC10057CABC /* RouterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4203DD331DF54EC10057CABC /* RouterCell.m */; };
 		4203DD361DF54EC10057CABC /* RouterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4203DD341DF54EC10057CABC /* RouterCell.xib */; };
+		42BDA05A1E1DE25D00E7F4AF /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BDA0581E1DE25D00E7F4AF /* SecondViewController.m */; };
+		42BDA05B1E1DE25D00E7F4AF /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42BDA0591E1DE25D00E7F4AF /* SecondViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,9 @@
 		4203DD321DF54EC10057CABC /* RouterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouterCell.h; sourceTree = "<group>"; };
 		4203DD331DF54EC10057CABC /* RouterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouterCell.m; sourceTree = "<group>"; };
 		4203DD341DF54EC10057CABC /* RouterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RouterCell.xib; sourceTree = "<group>"; };
+		42BDA0571E1DE25D00E7F4AF /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		42BDA0581E1DE25D00E7F4AF /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		42BDA0591E1DE25D00E7F4AF /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +75,9 @@
 				4203DD1C1DF54BC80057CABC /* AppDelegate.m */,
 				4203DD1E1DF54BC80057CABC /* ViewController.h */,
 				4203DD1F1DF54BC80057CABC /* ViewController.m */,
+				42BDA0571E1DE25D00E7F4AF /* SecondViewController.h */,
+				42BDA0581E1DE25D00E7F4AF /* SecondViewController.m */,
+				42BDA0591E1DE25D00E7F4AF /* SecondViewController.xib */,
 				4203DD321DF54EC10057CABC /* RouterCell.h */,
 				4203DD331DF54EC10057CABC /* RouterCell.m */,
 				4203DD341DF54EC10057CABC /* RouterCell.xib */,
@@ -123,7 +131,13 @@
 				TargetAttributes = {
 					4203DD141DF54BC80057CABC = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = DP9EWUSRWN;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -154,6 +168,7 @@
 				4203DD281DF54BC80057CABC /* LaunchScreen.storyboard in Resources */,
 				4203DD251DF54BC80057CABC /* Assets.xcassets in Resources */,
 				4203DD231DF54BC80057CABC /* Main.storyboard in Resources */,
+				42BDA05B1E1DE25D00E7F4AF /* SecondViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42BDA05A1E1DE25D00E7F4AF /* SecondViewController.m in Sources */,
 				4203DD201DF54BC80057CABC /* ViewController.m in Sources */,
 				4203DD1D1DF54BC80057CABC /* AppDelegate.m in Sources */,
 				4203DD351DF54EC10057CABC /* RouterCell.m in Sources */,
@@ -286,10 +302,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = DP9EWUSRWN;
 				INFOPLIST_FILE = RouterResponder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hefs.RouterResponder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -297,10 +317,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = DP9EWUSRWN;
 				INFOPLIST_FILE = RouterResponder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hefs.RouterResponder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -323,6 +347,7 @@
 				4203DD2E1DF54BC80057CABC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

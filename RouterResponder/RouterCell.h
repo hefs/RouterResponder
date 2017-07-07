@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIResponder+Router.h"
 
 @interface RouterCell : UITableViewCell
 - (void)setTitleValues:(NSDictionary *)values;
