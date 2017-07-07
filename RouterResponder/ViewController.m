@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "UIResponder+Router.h"
 #import "RouterCell.h"
+#import "SecondViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
@@ -28,6 +28,9 @@
     values = @[@{@"id":@"1",@"value":@"10元投资券"},
                @{@"id":@"2",@"value":@"20元投资券"},
                @{@"id":@"3",@"value":@"20元投资券"},
+               @{@"id":@"4",@"value":@"30元投资券"},
+               @{@"id":@"5",@"value":@"20元投资券"},
+               @{@"id":@"6",@"value":@"10元投资券"},
                @{@"id":@"4",@"value":@"30元投资券"},
                @{@"id":@"5",@"value":@"20元投资券"},
                @{@"id":@"6",@"value":@"10元投资券"}
@@ -66,6 +69,14 @@
         }
     }
     return nil;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    SecondViewController *nextController = [[SecondViewController alloc] initWithNibName:NSStringFromClass([SecondViewController class]) bundle:nil];
+    nextController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+//    nextController.modalPresentationStyle = UIModalPresentationOverFullScreen;
+    [self presentViewController:nextController animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
