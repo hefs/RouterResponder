@@ -31,9 +31,6 @@
                @{@"id":@"4",@"value":@"30元投资券"},
                @{@"id":@"5",@"value":@"20元投资券"},
                @{@"id":@"6",@"value":@"10元投资券"},
-               @{@"id":@"4",@"value":@"30元投资券"},
-               @{@"id":@"5",@"value":@"20元投资券"},
-               @{@"id":@"6",@"value":@"10元投资券"}
                ];
     [_layoutView registerNib:[UINib nibWithNibName:NSStringFromClass([RouterCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"Cell"];
 }
